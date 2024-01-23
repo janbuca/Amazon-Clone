@@ -1,7 +1,7 @@
 import './App.css';
-import Checkout from './Componets/Checkout/Checkout';
-import Header from './Componets/Header/Header';
-import Home from './Componets/Home/Home';
+import Checkout from './Checkout';
+import Header from './Header';
+import Home from './Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -17,7 +17,7 @@ function App() {
       
         {/* <Route path="Login" element = {<Login />}/>  */}
         <Route path="/" element = {<> <Header /> <Home /> </>}/>
-        <Route path="/Checkout" element = {<> <Header /> <Checkout /> </>}/>
+        <Route path="/Checkout" element = {<> <Header /> <Checkout/> </>}/>
         {/* <Route  path="/Payment" element = {<> <Header/>
           <Elements stripe={promise}>
             <Payment />
