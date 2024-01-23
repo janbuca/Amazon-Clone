@@ -1,15 +1,54 @@
-import React from 'react';
-import "./CheckoutProduct.css";
+// import React from 'react';
+// import "./CheckoutProduct.css";
 
-function CheckoutProduct({ image, rating, title, price, id, hideButton}) {
+// function CheckoutProduct({ image, rating, title, price, id}) {
+//   const removeFromBasket = () => {
+//     dispatch({
+//         type: 'REMOVE_FROM_BASKET',
+//         id:id,
+//     })
+  
  
-  return (
-    <div className='checkoutProduct'>
-      <img className="checkoutProduct__image"
-       src={image}
-       alt='Checkout Image'
-       />
-      <div className="checkoutProduct__info">
+//   return (
+//     <div className='checkoutProduct'>
+//       <img className="checkoutProduct__image"
+//        src={image}
+//        alt='Checkout Image'
+//        />
+//       <div className="checkoutProduct__info">
+// 				<p className="checkoutProduct__title">{title}</p>
+// 				<small>$</small>
+// 				<strong>{price}</strong>
+// 				<div className="checkoutProduct__rating">
+// 					{Array(rating)
+// 						.fill()
+// 						.map(() => (
+// 							<p>🌟</p>
+// 						))}
+// 				</div>
+// 				<button onClick={removeFromBasket}>Remove from Basket</button>
+// 			</div>
+//     </div>
+//   )
+// }
+
+// export default CheckoutProduct
+
+import React from "react";
+import "./CheckoutProduct.css";
+import { useStateValue } from "./StateProvider";
+const CheckoutProduct = ({ image, rating, title, price, id, hideButton}) => {
+    const [{ basket }, dispatch] = useStateValue();
+    const removeFromBasket = () => {
+        dispatch({
+            type: 'REMOVE_FROM_BASKET',
+            id:id,
+        })
+    }
+	return (
+		<div className="checkoutProduct">
+			<img className="checkoutProduct__image" src={image} />
+			<div className="checkoutProduct__info">
 				<p className="checkoutProduct__title">{title}</p>
 				<small>$</small>
 				<strong>{price}</strong>
@@ -20,10 +59,11 @@ function CheckoutProduct({ image, rating, title, price, id, hideButton}) {
 							<p>🌟</p>
 						))}
 				</div>
-				<button >Remove from Basket</button>
+				{!hideButton&&<button onClick={removeFromBasket}>Remove from Basket</button>}
 			</div>
-    </div>
-  )
-}
+		</div>
+	);
+};
 
-export default CheckoutProduct
+export default CheckoutProduct;
+
