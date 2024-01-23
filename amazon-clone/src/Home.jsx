@@ -8,7 +8,7 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          src="https://m.media-amazon.com/images/I/71nwqPZaNRL._SX3000_.jpg"
           alt=""
         />
         <div className="home__row">
@@ -24,7 +24,7 @@ function Home() {
             title="Dior Sauvage for Men Eau De Toilette, 3.4 Fl Oz"
             price={110.25}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/61NU2vszYVL._SX466_.jpg"
+            image="https://m.media-amazon.com/images/I/71QtC5QJ2oL._AC_UL480_FMwebp_QL65_.jpg"
           />
           <Product
             id="5"
@@ -33,7 +33,13 @@ function Home() {
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/81Ml8NQYfYL._AC_UX679_.jpg"
           />
-          <Product />
+          <Product
+            id="5"
+            title="Citizen Watches BU0054-52L Calendrier"
+            price={314.01}
+            rating={4}
+            image="https://m.media-amazon.com/images/I/61R-cZacm9L._AC_UY327_FMwebp_QL65_.jpg"
+          />
         </div>
         <div className="home__row">
           <Product
@@ -41,7 +47,7 @@ function Home() {
             title="RAK Magnetic Pickup Tool with LED Lights - Telescoping Magnet Pick Up Gadget Tool for Men, DIY Handyman, Father/Dad, Husband, Boyfriend, Him, Women"
             price={16.99}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/819DK3QrDVL._AC_SX522_.jpg"
+            image="https://m.media-amazon.com/images/I/71eOvVJBSoL._AC_UL480_FMwebp_QL65_.jpg"
           />
           <Product
             id="2"
@@ -55,7 +61,7 @@ function Home() {
             title="Citizen Watches BU0054-52L Calendrier"
             price={314.01}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81Ml8NQYfYL._AC_UX679_.jpg"
+            image="https://m.media-amazon.com/images/I/714g-8B6s+L._AC_UL480_FMwebp_QL65_.jpg"
           />
         </div>
         <div className="home__row">
@@ -89,14 +95,14 @@ function Home() {
             title="Beats Solo Pro Wireless Noise Cancelling On-Ear Headphones - Apple H1 Headphone Chip, Class 1 Bluetooth, 22 Hours of Listening Time, Built-in Microphone - Dark Blue"
             price={169.99}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/61KSB0XUzjL._AC_SX342_.jpg"
+            image="https://m.media-amazon.com/images/I/71ooNnWOThL._AC_UL480_FMwebp_QL65_.jpg"
           />
           <Product
             id="4"
             title="Ibanez 4 String Bass Guitar, Right, Brown Sunburst (GSRM20BS)"
             price={179.99}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/716KDhgBb2L._AC_SL1500_.jpg"
+            image="https://m.media-amazon.com/images/I/61y65rHxiZL._AC_UL480_FMwebp_QL65_.jpg"
           />
         </div>
         <div className="home__row">
@@ -105,23 +111,22 @@ function Home() {
             title="Ethiopian Christian art Christ in Glory Ethiopian Cross T-Shirt"
             price={15.99}
             rating={4}
-            image="https://m.media-amazon.com/images/I/71UDS5P+4UL._AC_UY654_FMwebp_QL65_.jpg"
+            image="https://m.media-amazon.com/images/I/71WkpiQE-4L._AC_UL480_FMwebp_QL65_.jpg"
           />
           <Product
             id="4"
             title="Dior Sauvage for Men Eau De Toilette, 3.4 Fl Oz"
             price={110.25}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/61NU2vszYVL._SX466_.jpg"
+            image="https://m.media-amazon.com/images/I/71g2oncHIqL._AC_UL480_FMwebp_QL65_.jpg"
           />
           <Product
             id="5"
             title="Citizen Watches BU0054-52L Calendrier"
             price={314.01}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81Ml8NQYfYL._AC_UX679_.jpg"
+            image="https://m.media-amazon.com/images/I/71n3RILxGiL._AC_UL480_FMwebp_QL65_.jpg"
           />
-          <Product />
         </div>
         <div className="home__row">
           <Product
@@ -129,21 +134,21 @@ function Home() {
             title="Ethiopian Christian art Christ in Glory Ethiopian Cross T-Shirt"
             price={15.99}
             rating={4}
-            image="https://m.media-amazon.com/images/I/71UDS5P+4UL._AC_UY654_FMwebp_QL65_.jpg"
+            image="https://m.media-amazon.com/images/I/91sjE3FvjhL._AC_UL480_FMwebp_QL65_.jpg"
           />
           <Product
             id="3"
             title="Beats Solo Pro Wireless Noise Cancelling On-Ear Headphones - Apple H1 Headphone Chip, Class 1 Bluetooth, 22 Hours of Listening Time, Built-in Microphone - Dark Blue"
             price={169.99}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/61KSB0XUzjL._AC_SX342_.jpg"
+            image="https://m.media-amazon.com/images/I/61LyvwetL2L._AC_UY327_FMwebp_QL65_.jpg"
           />
           <Product
             id="4"
             title="Ibanez 4 String Bass Guitar, Right, Brown Sunburst (GSRM20BS)"
             price={179.99}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/716KDhgBb2L._AC_SL1500_.jpg"
+            image="https://m.media-amazon.com/images/I/710o0VupScL._AC_UL480_FMwebp_QL65_.jpg"
           />
           <Product
             id="5"

@@ -10,7 +10,7 @@ function Login() {
   const navigate = useNavigate();
   const signIn = (e) => {
 		e.preventDefault();
-		 	signInWithEmailAndPassword(email, password, auth)
+		 	signInWithEmailAndPassword(auth, email, password )
       .then((userCredential) =>{
         if(userCredential)
         navigate("/");
@@ -22,7 +22,7 @@ function Login() {
 
   const register = (e) => {
 		e.preventDefault();
-		createUserWithEmailAndPassword(email, password, auth)
+		createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential)=>{
       if(userCredential)
       navigate("/")
